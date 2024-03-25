@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Library for PDF</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZFG_PDF_LIB</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFM_BM_PDF_TO_TEXT</FUNCNAME>
+     <SHORT_TEXT>Read PDF file to text</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>C_PDF_PATH</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ICL_DIAGFILENAME</TYP>
+      </RSCHA>
+     </CHANGING>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_FILE_CONTENT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTT_BM_TEXT</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_FILE_CONTENT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Text table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_PDF_PATH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>PDF Full Path File Name</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
